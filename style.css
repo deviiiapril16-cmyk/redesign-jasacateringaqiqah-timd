@@ -1,0 +1,348 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#eef2f5;
+color:#333;
+line-height:1.6;
+}
+
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 80px;
+background:#fff;
+box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+.logo img{
+height:45px;
+}
+
+.menu{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+.menu a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+transition:0.3s;
+}
+
+.menu a:hover{
+color:#e53935;
+}
+
+
+/* HERO */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px;
+gap:40px;
+}
+
+.hero-text{
+max-width:500px;
+}
+
+.hero-text h1{
+font-size:50px;
+margin-bottom:10px;
+}
+
+.hero-text span{
+color:#e53935;
+}
+
+.hero-text p{
+margin:15px 0;
+color:#555;
+}
+
+.hero-text button{
+padding:12px 28px;
+border:none;
+border-radius:8px;
+background:#e53935;
+color:white;
+font-weight:500;
+cursor:pointer;
+transition:0.3s;
+}
+
+.hero-text button:hover{
+background:#c62828;
+}
+
+.hero-img img{
+width:380px;
+max-width:100%;
+}
+
+
+/* FAVORITE */
+
+.favorite{
+padding:40px 80px;
+}
+
+/* header menu favorite */
+.favorite-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;
+}
+
+.favorite h2{
+font-size:32px;
+font-weight:600;
+}
+
+.favorite span{
+color:#ff3b3b;
+}
+
+/* tombol paket */
+.paket-btn{
+border:2px solid #ff3b3b;
+padding:8px 18px;
+border-radius:25px;
+color:#ff3b3b;
+font-weight:500;
+}
+
+/* container */
+.favorite-container{
+display:flex;
+justify-content:center;
+gap:35px;
+margin-top:20px;
+flex-wrap:wrap;
+}
+
+/* card */
+.fav-card{
+border-radius:25px;
+width:300px;
+height:120px;
+display:flex;
+align-items:center;
+padding:15px 25px;
+gap:20px;
+box-shadow:0 6px 10px rgba(0,0,0,0.08);
+}
+
+/* gambar */
+.fav-card img{
+width:120px;
+transform:translateX(-20px);
+}
+
+/* teks */
+.fav-card p{
+font-size:20px;
+font-weight:500;
+line-height:1.3;
+}
+
+/* warna card */
+.card1{
+background:linear-gradient(90deg,#f9dada,#f4a7a7);
+}
+
+.card2{
+background:linear-gradient(90deg,#f7ead2,#e8d0a7);
+}
+
+.card3{
+background:linear-gradient(90deg,#d9f0de,#a7d9b1);
+}
+
+/* KELEBIHAN */
+
+.kelebihan{
+padding:60px 80px;
+text-align:center;
+}
+
+.kelebihan-container{
+margin-top:35px;
+display:flex;
+flex-direction:column;
+gap:20px;
+align-items:center;
+}
+
+.box{
+background:#fff;
+padding:20px;
+border-radius:10px;
+width:450px;
+max-width:90%;
+box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+
+/* TENTANG */
+
+.tentang{
+text-align:center;
+padding:60px 20%;
+}
+
+.tentang p{
+margin-top:15px;
+color:#555;
+}
+
+
+/* MENU MASAKAN */
+
+.menu-masakan{
+padding:60px 80px;
+text-align:center;
+}
+
+.menu-container{
+display:flex;
+justify-content:center;
+gap:25px;
+margin-top:35px;
+flex-wrap:wrap;
+}
+
+.menu-card{
+background:#fff;
+padding:20px;
+border-radius:12px;
+width:200px;
+box-shadow:0 3px 8px rgba(0,0,0,0.08);
+}
+
+.menu-card img{
+width:100%;
+border-radius:8px;
+}
+
+.menu-card h3{
+margin:10px 0;
+}
+
+.menu-card button{
+margin-top:10px;
+padding:8px 15px;
+border:none;
+background:#e0e0e0;
+border-radius:6px;
+cursor:pointer;
+}
+
+
+/* PAKET */
+
+.paket{
+padding:60px 80px;
+text-align:center;
+}
+
+.paket-container{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:35px;
+flex-wrap:wrap;
+}
+
+.paket-card{
+background:#fff;
+padding:20px;
+border-radius:12px;
+width:260px;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.paket-card img{
+width:100%;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+.harga{
+color:#e53935;
+font-weight:bold;
+margin:10px 0;
+}
+
+.paket-card button{
+padding:8px 15px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+margin:5px;
+}
+
+.btn-merah{
+background:#e53935;
+color:white;
+}
+
+
+/* TESTIMONI */
+
+.testimoni{
+padding:60px 80px;
+text-align:center;
+}
+
+.testi-container{
+display:flex;
+justify-content:center;
+gap:20px;
+margin-top:35px;
+flex-wrap:wrap;
+}
+
+.testi-container img{
+width:200px;
+border-radius:12px;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
+}
+
+
+/* FOOTER */
+
+footer{
+background:#0c5a87;
+color:white;
+padding:40px 20px;
+text-align:center;
+}
+
+.footer-container{
+display:flex;
+justify-content:center;
+gap:100px;
+margin:30px 0;
+flex-wrap:wrap;
+}
+
+.copyright{
+margin-top:20px;
+font-size:14px;
+opacity:0.8;
+}
