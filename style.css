@@ -21,11 +21,17 @@ align-items:center;
 padding:15px 80px;
 background:#fff;
 box-shadow:0 2px 8px rgba(0,0,0,0.08);
+
+position:sticky;
+top:0;
+z-index:1000;
 }
+
 
 .logo img{
 height:45px;
 }
+
 
 .menu{
 display:flex;
@@ -37,11 +43,45 @@ gap:25px;
 text-decoration:none;
 color:#333;
 font-weight:500;
+padding:6px 8px;
+border-radius:10px;
 transition:0.3s;
 }
 
+/* efek hover */
 .menu a:hover{
+background:#ffe5e5;
 color:#e53935;
+}
+
+/* menu yang aktif */
+.menu a.active{
+background:#e53935;
+color:white;
+}
+
+/* SEARCH */
+
+.search-box{
+display:flex;
+align-items:center;
+background:#f1f1f1;
+border-radius:20px;
+padding:5px 10px;
+}
+
+.search-box input{
+border:none;
+background:transparent;
+outline:none;
+padding:5px;
+font-size:14px;
+width:120px;
+}
+
+.search-box img{
+width:18px;
+cursor:pointer;
 }
 
 
@@ -402,7 +442,7 @@ box-shadow:0 4px 8px rgba(0,0,0,0.1);
 
 .footer{
 background:#e9ecef;
-padding-top:40px;
+padding-top:130px;
 text-align:center;
 }
 

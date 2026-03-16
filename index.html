@@ -17,28 +17,31 @@
 </div>
 
 <ul class="menu">
-<li><a href="#">Home</a></li>
-<li><a href="#">Profil</a></li>
-<li><a href="#">Menu</a></li>
-<li><a href="#">Paket</a></li>
-<li><a href="#">Testimoni</a></li>
-<li><a href="#">Kontak</a></li>
+<li><a href="#home">Home</a></li>
+<li><a href="#profil">Profil</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#paket">Paket</a></li>
+<li><a href="#testimoni">Testimoni</a></li>
+<li><a href="#kontak">Kontak</a></li>
 </ul>
 
-<div class="search">
-🔍
+<div class="search-box">
+<input type="text" placeholder="Search...">
+<img src="images/searching.png">
 </div>
 
 </nav>
 
 
-<!-- HERO -->
-<section class="hero">
+<!-- HOME -->
+<section id="home" class="hero">
 
 <div class="hero-text">
 <h1><span>Best</span> Catering</h1>
 <p>Welcome to Jasa Catering Aqiqah</p>
+<a href="https://forms.gle/abcd1234xyz" target="_blank">
 <button>Pesan Sekarang</button>
+</a>
 </div>
 
 <div class="hero-img">
@@ -46,7 +49,6 @@
 </div>
 
 </section>
-
 
 
 <!-- MENU FAVORITE -->
@@ -78,7 +80,7 @@
 </section>
 
 <!-- KELEBIHAN -->
-<section class="kelebihan">
+<section id="profil" class="kelebihan">
 
 <h2>Kenapa Memilih <span>Jasa Catering Aqiqah?</span></h2>
 
@@ -127,7 +129,7 @@ disembelih sesuai syariat, dan diolah secara higienis oleh tenaga profesional.
 
 
 <!-- MENU MASAKAN -->
-<section class="menu-masakan">
+<section id="menu" class="menu-masakan">
 
 <h2>Menu Masakan</h2>
 
@@ -222,7 +224,7 @@ disembelih sesuai syariat, dan diolah secara higienis oleh tenaga profesional.
 
 
 <!-- PAKET -->
-<section class="paket">
+<section id="paket" class="paket">
 
 <h2>Paket Aqiqah</h2>
 
@@ -259,7 +261,7 @@ disembelih sesuai syariat, dan diolah secara higienis oleh tenaga profesional.
 
 
 <!-- TESTIMONI -->
-<section class="testimoni">
+<section id="testimoni" class="testimoni">
 
 <h2>Testimoni Customers</h2>
 
@@ -279,7 +281,7 @@ disembelih sesuai syariat, dan diolah secara higienis oleh tenaga profesional.
 
 
 <!-- FOOTER -->
-<footer class="footer">
+<footer id="kontak" class="footer">
 
 <h2 class="footer-title">Jadi Jangan Ragu Pilih</h2>
 
@@ -331,3 +333,34 @@ Copyright © 2025 Jasa Catering Aqiqah
 </div>
 
 </footer>
+
+<script>
+const sections = document.querySelectorAll("section, footer");
+const navLinks = document.querySelectorAll(".menu a");
+
+window.addEventListener("scroll", () => {
+
+let current = "";
+
+sections.forEach(section => {
+const sectionTop = section.offsetTop - 100;
+const sectionHeight = section.clientHeight;
+
+if (pageYOffset >= sectionTop) {
+current = section.getAttribute("id");
+}
+});
+
+navLinks.forEach(link => {
+link.classList.remove("active");
+
+if(link.getAttribute("href") === "#" + current){
+link.classList.add("active");
+}
+});
+
+});
+</script>
+
+</body>
+</html>
